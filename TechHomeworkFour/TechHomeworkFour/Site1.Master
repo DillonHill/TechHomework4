@@ -1,0 +1,23 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="TechHomeworkFour.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <a href="WebForm1.aspx">Carousel Boostrap</a>
+            <a href="WebForm2.aspx">Grid Boostrap</a>
+            <a href="WebForm3.aspx">Horizontal scrolling Boostrap</a>
+        </div>
+        <asp:ContentPlaceHolder ID="Carousel" runat="server"></asp:ContentPlaceHolder>
+        <asp:ContentPlaceHolder ID="Grid" runat="server"></asp:ContentPlaceHolder>
+        <asp:ContentPlaceHolder ID="Scrollable" runat="server"></asp:ContentPlaceHolder>
+    </form>
+</body>
+</html>
