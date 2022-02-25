@@ -10,11 +10,19 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>
-            <a href="WebForm1.aspx">Carousel Boostrap</a>
-            <a href="WebForm2.aspx">Grid Boostrap</a>
-            <a href="WebForm3.aspx">Horizontal scrolling Boostrap</a>
-        </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Check out my bootstrap things</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" href="WebForm1.aspx">Carousel <span class="sr-only"></span></a>
+      <a class="nav-item nav-link" href="WebForm2.aspx">Grid</a>
+      <a class="nav-item nav-link" href="WebForm3.aspx">Side Scrolling</a>
+    </div>
+  </div>
+</nav>
         <asp:ContentPlaceHolder ID="Carousel" runat="server"></asp:ContentPlaceHolder>
         <asp:ContentPlaceHolder ID="Grid" runat="server"></asp:ContentPlaceHolder>
         <asp:ContentPlaceHolder ID="Scrollable" runat="server"></asp:ContentPlaceHolder>
